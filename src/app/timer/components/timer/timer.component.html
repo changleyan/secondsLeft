@@ -1,19 +1,19 @@
 <main class=" flex flex-col justify-center items-center gap-12">
   <h1 class="text-3xl font-bold">Time Remaining</h1>
 
-  <section class="flex justify-center items-center gap-3">
+  <section class="flex justify-center items-center gap-3 flex-col md:flex-row">
 
     <app-number-card title="Days" number="{{ countdownService.days$ | async }}"></app-number-card>
 
-    <app-number-card [isNumber]="false"></app-number-card>
+    <app-number-card [isNumber]="false" class="rotate-90 md:rotate-0"></app-number-card>
 
     <app-number-card title="Hours" number="{{ countdownService.hours$ | async }}"></app-number-card>
 
-    <app-number-card [isNumber]="false"></app-number-card>
+    <app-number-card [isNumber]="false" class="rotate-90 md:rotate-0"></app-number-card>
 
     <app-number-card title="Minutes" number="{{ countdownService.minutes$ | async }}"></app-number-card>
 
-    <app-number-card [isNumber]="false"></app-number-card>
+    <app-number-card [isNumber]="false" class="rotate-90 md:rotate-0"></app-number-card>
 
     <app-number-card title="Seconds" number="{{ countdownService.seconds$ | async }}"></app-number-card>
 

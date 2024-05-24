@@ -11,16 +11,12 @@ import {AsyncPipe, NgIf} from "@angular/common";
   ],
   templateUrl: './header.component.html',
 })
-export class HeaderComponent implements OnInit{
+export class HeaderComponent{
   isDarkMode = this.themeService.darkMode$;
 
   constructor(
     private themeService: ThemeToggleService
   ) {}
-
-  ngOnInit() {
-    console.log(this.isDarkMode, 'isDarkMode');
-  }
 
   toggleTheme() {
     this.themeService.toggleDarkMode();

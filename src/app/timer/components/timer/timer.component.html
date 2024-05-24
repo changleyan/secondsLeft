@@ -1,18 +1,18 @@
 <section class="flex justify-center items-center gap-3">
 
 
-  <app-number-card title="Days" number="240"></app-number-card>
+  <app-number-card title="Days" number="{{ countdownService.days$ | async }}"></app-number-card>
 
   <app-number-card [isNumber]="false"></app-number-card>
 
-  <app-number-card title="Hours" number="17"></app-number-card>
+  <app-number-card title="Hours" number="{{ countdownService.hours$ | async }}"></app-number-card>
 
   <app-number-card [isNumber]="false"></app-number-card>
 
-  <app-number-card title="Minutes" number="51"></app-number-card>
+  <app-number-card title="Minutes" number="{{ countdownService.minutes$ | async }}"></app-number-card>
 
   <app-number-card [isNumber]="false"></app-number-card>
 
-  <app-number-card title="Seconds" number="40"></app-number-card>
+  <app-number-card title="Seconds" number="{{ countdownService.seconds$ | async }}"></app-number-card>
 
 </section>

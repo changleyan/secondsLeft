@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {RouterOutlet} from "@angular/router";
 import {HeaderComponent} from "@root/shared/components/header/header.component";
+import {FooterComponent} from "@root/shared/components/footer/footer.component";
 
 
 @Component({
@@ -8,10 +9,10 @@ import {HeaderComponent} from "@root/shared/components/header/header.component";
   standalone: true,
   imports: [
     RouterOutlet,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   ],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
 })
 export class HomeComponent {
 

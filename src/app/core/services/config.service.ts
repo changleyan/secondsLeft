@@ -6,7 +6,7 @@ import {environment} from "../../../environments/environment";
 })
 export class ConfigService {
 
-  get apiRindeGastos(): string {
+  get baseUrl(): string {
     return environment.api.deadline;
   }
 

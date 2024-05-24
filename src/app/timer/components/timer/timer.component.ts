@@ -4,6 +4,7 @@ import {CountdownService} from "@app/timer/services/countdown.service";
 import {AsyncPipe} from "@angular/common";
 import {APIService} from "@app/timer/services/api.service";
 import {tap} from "rxjs";
+import {ResponseApiSeconds} from "@app/timer/model/SecondsInterface";
 
 @Component({
   selector: 'app-timer',
@@ -29,7 +30,7 @@ export class TimerComponent implements OnInit {
 
   getSeconds(): void {
     this.apiService.getTimeInSeconds()
-      .pipe(tap((data: number) => this.countdownService.setCountdownDate(data)))
+      .pipe(tap((seconds: ResponseApiSeconds) => this.countdownService.setCountdownDate(seconds.secondsLeft)))
       .subscribe();
   }
 

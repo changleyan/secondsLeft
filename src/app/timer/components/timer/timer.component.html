@@ -1,18 +1,26 @@
-<section class="flex justify-center items-center gap-3">
+<main class=" flex flex-col justify-center items-center gap-12">
+  <h1 class="text-3xl font-bold">Time Remaining</h1>
 
+  <section class="flex justify-center items-center gap-3">
 
-  <app-number-card title="Days" number="{{ countdownService.days$ | async }}"></app-number-card>
+    <app-number-card title="Days" number="{{ countdownService.days$ | async }}"></app-number-card>
 
-  <app-number-card [isNumber]="false"></app-number-card>
+    <app-number-card [isNumber]="false"></app-number-card>
 
-  <app-number-card title="Hours" number="{{ countdownService.hours$ | async }}"></app-number-card>
+    <app-number-card title="Hours" number="{{ countdownService.hours$ | async }}"></app-number-card>
 
-  <app-number-card [isNumber]="false"></app-number-card>
+    <app-number-card [isNumber]="false"></app-number-card>
 
-  <app-number-card title="Minutes" number="{{ countdownService.minutes$ | async }}"></app-number-card>
+    <app-number-card title="Minutes" number="{{ countdownService.minutes$ | async }}"></app-number-card>
 
-  <app-number-card [isNumber]="false"></app-number-card>
+    <app-number-card [isNumber]="false"></app-number-card>
 
-  <app-number-card title="Seconds" number="{{ countdownService.seconds$ | async }}"></app-number-card>
+    <app-number-card title="Seconds" number="{{ countdownService.seconds$ | async }}"></app-number-card>
 
-</section>
+  </section>
+
+  <section>
+    <app-number-card title="Toal Seconds" number="{{ countdownService.totalSeconds$ | async }}"></app-number-card>
+  </section>
+</main>
+

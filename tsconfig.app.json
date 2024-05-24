@@ -8,8 +8,8 @@
       "@app/*": [
         "./src/app/*"
       ],
-      "@root/*": [
-        "./src/app/root/*"
+      "@core/*": [
+        "./src/app/core/*"
       ],
       "@env/*": [
         "./src/environments/*"

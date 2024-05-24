@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import {RouterOutlet} from "@angular/router";
-import {HeaderComponent} from "@root/shared/components/header/header.component";
-import {FooterComponent} from "@root/shared/components/footer/footer.component";
+import {HeaderComponent} from "@core/components/header/header.component";
+import {FooterComponent} from "@core/components/footer/footer.component";
+import {TimerComponent} from "@app/timer/components/timer/timer.component";
 
 
 @Component({
@@ -10,7 +11,8 @@ import {FooterComponent} from "@root/shared/components/footer/footer.component";
   imports: [
     RouterOutlet,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    TimerComponent
   ],
   templateUrl: './home.component.html',
 })

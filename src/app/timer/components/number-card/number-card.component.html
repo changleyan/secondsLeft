@@ -1,0 +1,16 @@
+@if (isNumber) {
+  <div class="max-w-sm p-3 pt-1 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <p class="font-normal text-gray-700 dark:text-gray-400 text-center">{{ title }}</p>
+    <hr class="border-gray-200 sm:mx-auto dark:border-gray-700 mb-4"/>
+    <h2 >
+      <h5 class="mb-2 text-8xl font-bold tracking-tight text-gray-700 dark:text-white">{{ number }}</h5>
+    </h2>
+  </div>
+} @else {
+  <div>
+    <h2 >
+      <h5 class="mb-2 text-8xl font-bold tracking-tight text-gray-800 dark:text-white">:</h5>
+    </h2>
+  </div>
+}
+

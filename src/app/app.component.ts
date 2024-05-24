@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import {HomeComponent} from "@root/shared/layout/home/home.component";
 import {initFlowbite} from "flowbite";
-import {ThemeToggleService} from "@root/shared/services/theme-toggle.service";
+import {HomeComponent} from "@core/layout/home/home.component";
+import {ThemeToggleService} from "@core/services/theme-toggle.service";
 
 
 @Component({

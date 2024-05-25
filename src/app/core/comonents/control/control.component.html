@@ -1,12 +1,39 @@
 <section class="flex flex-col md:flex-row gap-14 justify-evenly w-full items-center">
   <app-card-exercise
     title="Angular"
-    description="Angular Exercise"
+    description="Angular Exercise [Count down]"
     link="/Timer"
+    data-popover-target="popover-description" data-popover-placement="bottom-end"
   ></app-card-exercise>
+  <div data-popover id="popover-description" role="tooltip"
+       class="absolute z-10 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-white border
+       border-gray-200 rounded-lg shadow-sm opacity-0 w-96 dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400">
+    <div class="p-3 space-y-2">
+      <h3 class="font-semibold text-gray-900 dark:text-white">Commet</h3>
+      <p>In the context of this exercise, the existence of an API hosted on the path "https://deadline/api/deadline" is
+        assumed, which provides the time in seconds on an object. In case this API fails, the current time plus 24 hours
+        is considered as the time to wait.</p>
+    </div>
+    <div data-popper-arrow></div>
+  </div>
+
+
   <app-card-exercise
     title="General"
-    description="General Exercise"
+    description="General Exercise [Find Camera]"
     link="/Camera"
+    data-popover-target="popover-description2" data-popover-placement="bottom-end"
   ></app-card-exercise>
+  <div data-popover id="popover-description2" role="tooltip"
+       class="absolute z-10 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-white border
+       border-gray-200 rounded-lg shadow-sm opacity-0 w-96 dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400">
+    <div class="p-3 space-y-2">
+      <h3 class="font-semibold text-gray-900 dark:text-white">Commet</h3>
+      <p>I opted to carry out the implementation of the General exercise using TypeScript, and additionally added a
+        visual interface as an added value. The required function is located within the service called "CameraService"
+        [src\appcameraServices\CameraService], spanning from line 49 to line 51 and is named "findMatchingCamera". This
+        function receives the agreed attributes as parameters and returns a boolean value as a result.</p>
+    </div>
+    <div data-popper-arrow></div>
+  </div>
 </section>
